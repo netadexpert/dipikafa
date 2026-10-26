@@ -276,14 +276,14 @@ src="https://www.facebook.com/tr?id=4511037519169422&ev=PageView&noscript=1"
 
   </main>
 
-  <!-- Script to Trigger Pixel Lead Event & Smooth Navigation -->
+  <!-- Script to Trigger Pixel Subscribe Event & Smooth Navigation -->
   <script>
     document.getElementById('joinBtn').addEventListener('click', function(e) {
         e.preventDefault();
         var targetUrl = this.href;
         
         if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
+            fbq('track', 'Subscribe');
         }
         
         setTimeout(function() {
